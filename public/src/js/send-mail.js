@@ -4,7 +4,7 @@ async function sendMail(event) {
     event.preventDefault();
 
     const { name, email, phone, subject, message } = getFormValues();
-    const baseUrl = "https://portifolio-qu7k.onrender/send-mail";
+    const baseUrl = "https://portifolio-qu7k.onrender.com/send-mail";
 
     if (name && email && subject && message) {
         try {

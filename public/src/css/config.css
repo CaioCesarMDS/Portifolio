@@ -1,5 +1,5 @@
 /*
-    Config light mode
+    Config for light mode
 */
 
 body.light {
@@ -44,7 +44,7 @@ body.light .textarea-field textarea {
 }
 
 /*
-   Config Tab navigation
+   Config for tab navigation
 */
 
 .logo:focus-within {
@@ -79,6 +79,10 @@ body.light .categories button:focus {
 
 .project-img img:focus {
     transform: scale(1.05);
+}
+
+.project-info .project-name:focus {
+    color: var(--primary-color);
 }
 
 .links-icons a:focus {

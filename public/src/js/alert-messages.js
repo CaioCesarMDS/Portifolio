@@ -1,7 +1,8 @@
 const disabledButtons = document.querySelectorAll("#disabled");
 
 disabledButtons.forEach((disabledButton) => {
-    disabledButton.onclick = () => {
+    disabledButton.onclick = (e) => {
+        e.preventDefault();
         swal({
             title: "Sinto muito!",
             text: "Esse projeto não está disponível no momento!",

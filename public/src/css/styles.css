@@ -277,7 +277,12 @@ header {
 }
 
 .project-img img:hover {
+    cursor: pointer;
     transform: scale(1.05);
+}
+
+.project-img:hover + .project-content .project-name p {
+    color: var(--primary-color);
 }
 
 .project-content {
@@ -296,10 +301,6 @@ header {
 
 .project-name p {
     transition: color 0.4s ease;
-}
-
-.project:hover .project-name p {
-    color: var(--primary-color);
 }
 
 .technologies-used {

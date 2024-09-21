@@ -1,7 +1,6 @@
 import "./alert-messages.js";
-import { addLightClass } from "./light-theme.js";
+import { addLightClass } from "./config.js";
 import "./mobilemenu.js";
-import "./scroll-effect.js";
 import { sendMail } from "./send-mail.js";
 import "./skill-name.js";
 import "./slider-image.js";

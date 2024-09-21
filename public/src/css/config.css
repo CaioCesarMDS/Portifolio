@@ -1,0 +1,102 @@
+/*
+    Config light mode
+*/
+
+body.light {
+    background-color: var(--tertiary-color);
+}
+
+body.light .developer .floating-letter,
+body.light .item-menu a:hover,
+body.light .project .links-icons a:hover,
+body.light .contact h2 {
+    color: var(--primary-color);
+}
+
+body.light p,
+body.light h1,
+body.light h2,
+body.light h3,
+body.light .floating-letter,
+body.light .menu:hover a,
+body.light .project .links-icons a,
+body.light .mobile-menu div {
+    color: var(--secondary-color);
+}
+
+body.light .categories button {
+    background-color: var(--tertiary-color);
+}
+
+body.light .project,
+body.light .input,
+body.light .textarea body.light .skill-name p {
+    background-color: var(--senary-color);
+}
+
+body.light .categories button:hover {
+    background-color: #e2e1e1;
+}
+
+body.light .input-field input,
+body.light .textarea-field textarea {
+    border: 1px solid var(--septenary-color);
+}
+
+/*
+   Config Tab navigation
+*/
+
+.logo:focus-within {
+    scale: 1.1;
+}
+
+body.light .menu a:focus {
+    color: var(--secondary-color);
+}
+
+.menu:hover .item-menu a,
+.menu .item-menu a:focus {
+    color: var(--tertiary-color);
+}
+
+.social-medias a:focus i {
+    animation: icons 0.4s step-start infinite;
+}
+
+.curriculum:focus-within {
+    box-shadow: 5px 5px 0 0 var(--quartenary-color);
+    transform: translate(-5px, -5px);
+}
+
+.categories button:focus {
+    background-color: #324149;
+}
+
+body.light .categories button:focus {
+    background-color: #e2e1e1;
+}
+
+.project-img img:focus {
+    transform: scale(1.05);
+}
+
+.links-icons a:focus {
+    color: var(--primary-color);
+}
+
+body.light .input-field input:focus {
+    border: 2px solid var(--primary-color);
+}
+
+body.light .textarea-field textarea:focus {
+    border: 2px solid var(--primary-color);
+}
+
+.submit-btn button#btn-sendmail:focus {
+    animation: buttonAnimation 0.3s ease both;
+}
+
+.footer-info picture:focus-within {
+    transform: scale(1.1);
+}

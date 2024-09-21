@@ -1,0 +1,27 @@
+.mobile-menu {
+    cursor: pointer;
+    z-index: 15;
+    right: 2em;
+    display: none;
+}
+
+.mobile-menu div {
+    width: 32px;
+    height: 2px;
+    margin: 8px;
+    background-color: white;
+    transition: 0.3s;
+    border-radius: 5px;
+}
+
+.mobile-menu .line1.active {
+    transform: rotate(-45deg) translate(-8px, 8px);
+}
+
+.mobile-menu .line2.active {
+    opacity: 0;
+}
+
+.mobile-menu .line3.active {
+    transform: rotate(45deg) translate(-5px, -7px);
+}

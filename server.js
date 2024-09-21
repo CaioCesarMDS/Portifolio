@@ -11,7 +11,7 @@ const port = process.env.PORT || 3030;
 const user = process.env.USER_NAME;
 const pass = process.env.PASSWORD;
 
-app.use(express.static(path.join(__dirname, "public")));
+app.use(express.static("public"));
 app.use(cors());
 app.use(express.json());
 
@@ -50,7 +50,7 @@ app.post("/send-mail", (req, res) => {
 });
 
 app.get("/", (req, res) => {
-    res.sendFile(path.join(__dirname, "public", "index.html"));
+    res.sendFile("public", "index.html");
 });
 
 app.listen(port, () => console.log(`Running on port ${port}`));

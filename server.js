@@ -1,6 +1,7 @@
 const express = require("express");
 const nodemailer = require("nodemailer");
 const dotenv = require("dotenv");
+const path = require("path");
 const cors = require("cors");
 
 dotenv.config();
@@ -11,7 +12,7 @@ const port = process.env.PORT || 3030;
 const user = process.env.USER_NAME;
 const pass = process.env.PASSWORD;
 
-app.use(express.static("public"));
+app.use(express.static(path.join(__dirname, "public")));
 app.use(cors());
 app.use(express.json());
 
@@ -50,7 +51,7 @@ app.post("/send-mail", (req, res) => {
 });
 
 app.get("/", (req, res) => {
-    res.sendFile("public", "index.html");
+    res.sendFile(path.join(__dirname, "public", "index.html"));
 });
 
 app.listen(port, () => console.log(`Running on port ${port}`));

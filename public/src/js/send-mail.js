@@ -4,7 +4,6 @@ async function sendMail(event) {
     event.preventDefault();
 
     const { name, email, phone, subject, message } = getFormValues();
-
     const baseUrl = "http://localhost:3030/send-mail";
 
     if (name && email && subject && message) {

@@ -11,7 +11,7 @@
 <p>Este é o meu portfólio pessoal, onde apresento os principais projetos que desenvolvi. O portfólio foi construído utilizando tecnologias modernas como HTML, CSS, JavaScript e Node.js, e está hospedado no Render. Além de apresentar os projetos, o portfólio também conta com uma funcionalidade de envio de e-mails para contato diretamente do site.
 </p>
 
-**Veja o projeto rodando aqui** -> [ChatApp](https://portifolio-qu7k.onrender.com/)
+**Veja o projeto rodando aqui** -> [Portifólio](https://portifolio-qu7k.onrender.com/)
 
 <br>
 

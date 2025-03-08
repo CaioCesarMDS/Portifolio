@@ -1,8 +1,12 @@
-const express = require("express");
-const nodemailer = require("nodemailer");
-const dotenv = require("dotenv");
-const path = require("path");
-const cors = require("cors");
+import cors from "cors";
+import dotenv from "dotenv";
+import express from "express";
+import nodemailer from "nodemailer";
+import path from "path";
+import { fileURLToPath } from "url";
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
 dotenv.config();
 
@@ -12,7 +16,7 @@ const port = process.env.PORT || 3030;
 const user = process.env.USER_NAME;
 const pass = process.env.PASSWORD;
 
-app.use(express.static(path.join(__dirname, "public")));
+app.use(express.static(path.resolve(__dirname, "public")));
 app.use(cors());
 app.use(express.json());
 

@@ -1,4 +1,3 @@
-
 <p align="center">
   <img src="https://github.com/user-attachments/assets/3d078ab2-5a5f-4b8d-b206-6db7e2a63b0c" width="600">
 </p>
@@ -17,11 +16,15 @@
 
 <h1>Pré-requisitos</h1>
 <ul>
+    <li>Conta Elastic Email</li>
     <li>Node</li>
 </ul>
 </p>
 
+Acesse [Elastic Email](https://elasticemail.com) e crie uma conta (ou entre na sua conta existente)
+
 Se você não tiver [Node](https://nodejs.org/en) <strong>(Recomendável versão LTS)</strong> <br>
+
 <br>
 
 <h1>Instalação</h1>
@@ -33,11 +36,17 @@ Se você não tiver [Node](https://nodejs.org/en) <strong>(Recomendável versão
 git clone https://github.com/CaioCesarMDS/Portifolio.git
 ```
 
-3 - Instale as dependências do projeto:
+2 - Instale as dependências do projeto:
 
 ```
 npm install
 ```
+
+3 - **Configure seu `.env`**:
+
+-   Faça uma cópia do conteúdo de `.env.example` para um novo arquivo `.env`:
+
+-   Edite o arquivo `.env` com as informações do Elastic Email:
 
 <br>
 
@@ -53,7 +62,6 @@ npm start
 2 - Abra a aplicação no navegador:
 
 http://localhost:3030/
-
 
 <br>
 
@@ -81,8 +89,3 @@ http://localhost:3030/
 <h1>Autor</h1>
 <p>Esse Projeto foi desenvolvido por <strong>Caio Cesar 🔥</strong></p>
 <br>
-
-<h1>Autor</h1>
-<p>Esse Projeto foi desenvolvido por <strong>Caio Cesar</strong></p>
-<br>
-
